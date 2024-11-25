@@ -21,17 +21,28 @@ gsap.to(".circle2", {
   duration: 15,
 });
 
-
-
-
-
-
 const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
+  "--marquee-elements-displayed"
+);
 const marqueeContent = document.querySelector("ul.marquee-content");
 
 root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 
-for(let i=0; i<marqueeElementsDisplayed; i++) {
+for (let i = 0; i < marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+
+document.querySelectorAll(".faq__item_question").forEach((question) => {
+  question.addEventListener("click", function () {
+    const currentItem = this.parentElement;
+    if (currentItem.classList.contains("active")) {
+      currentItem.classList.remove("active");
+    } else {
+      document.querySelectorAll(".faq__item").forEach((item) => {
+        item.classList.remove("active");
+      });
+      currentItem.classList.add("active");
+    }
+  });
+});
