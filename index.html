@@ -4,118 +4,192 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <title></title>
   </head>
   <body>
     <div class="container_top">
-        <video autoplay muted loop id="myVideo">
-            <source src="./img/main.mp4" type="video/mp4">
-          </video>
-          <div class="container_top_wrapper">
-      <header class="header">
-        <a class="header_logo">
-          <img src="./img/logo.svg" class="header_logo_img" alt="" />
-          <p class="header_logo_text">BLISS</p>
-        </a>
-        <div class="header__nav">
-          <a href="" class="header__nav_item_one button"
-            ><img
-              src="./img/Burger.svg"
-              alt=""
-              class="header__nav_item_one_img"
-            />
-            Menu</a
-          >
-          <a href="" class="header__nav_item_two button">
-            Support the project</a
-          >
-        </div>
-        <a href="" class="header__button button">Buy BLISS</a>
-      </header>
+      <video autoplay muted loop id="myVideo">
+        <source src="./img/main.mp4" type="video/mp4" />
+      </video>
+      <div class="container_top_wrapper">
+        <header class="header">
+          <a class="header_logo">
+            <img src="./img/logo.svg" class="header_logo_img" alt="" />
+            <p class="header_logo_text">BLISS</p>
+          </a>
+          <div class="header__nav">
+            <a href="" class="header__nav_item_one button"
+              ><img
+                src="./img/Burger.svg"
+                alt=""
+                class="header__nav_item_one_img"
+              />
+              Menu</a
+            >
+            <a href="" class="header__nav_item_two button">
+              Support the project</a
+            >
+          </div>
+          <a href="" class="header__button button">Buy BLISS</a>
+        </header>
 
-      <div class="main">
-        <div class="main__left">
-          <h1 class="main__title">BLISS Coin</h1>
-          <p class="main__text1">
-            Your path to the world of crypto with gecko-like enthusiasm!
-          </p>
-          <p class="main__text2">Invest with nostalgia and a smile</p>
-          <a href="" class="main__button button"
-            >Start your journey with BLISS</a
-          >
-        </div>
-        <div class="main__right">
-          <a href="" class="main__right_button button">Roadmap</a>
-          <a href="" class="main__right_button_down button"
-            ><img src="./img/road.svg" alt=""
-          /></a>
+        <div class="main">
+          <div class="main__left">
+            <h1 class="main__title">BLISS Coin</h1>
+            <p class="main__text1">
+              Your path to the world of crypto with gecko-like enthusiasm!
+            </p>
+            <p class="main__text2">Invest with nostalgia and a smile</p>
+            <a href="" class="main__button button"
+              >Start your journey with BLISS</a
+            >
+          </div>
+          <div class="main__right">
+            <a href="" class="main__right_button button">Roadmap</a>
+            <a href="" class="main__right_button_down button"
+              ><img src="./img/road.svg" alt=""
+            /></a>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-
-
-
-
 
     <div class="about">
-
-
-        <div class="about_deco_container">
-            <div class="about_deco_inner-container">
-                <div class="about_deco_position-relative">
-                    <div class="about_deco_circle about_deco_yellow-circle"></div>
-                    <div class="about_deco_circle about_deco_blue-circle about_deco_rotated"></div>
-                    <div class="about_deco_circle about_deco_purple-circle"></div>
-                    <div class="about_deco_circle about_deco_green-circle about_deco_rotated"></div>
-                </div>
-            </div>
+      <div class="about_deco_container">
+        <div class="about_deco_inner-container">
+          <div class="about_deco_position-relative">
+            <div class="about_deco_circle about_deco_yellow-circle"></div>
+            <div
+              class="about_deco_circle about_deco_blue-circle about_deco_rotated"
+            ></div>
+            <div class="about_deco_circle about_deco_purple-circle"></div>
+            <div
+              class="about_deco_circle about_deco_green-circle about_deco_rotated"
+            ></div>
+          </div>
         </div>
-        
+      </div>
 
-
-        <h2 class="about__title title">
-            About
-        </h2>
-        <div class="about__wrapper">
-            <div class="about_left">
-                <p class="about_left_title">
-                    We love geckos. We love life. We love to give joy and love. 
-                </p>
-                <div class="about__left_wrapper">
-                    <p class="about__left_item">Bliss is a meme token created to achieve your inner peace. Be it lack of money, sadness, problems. We are the very community that will support not only with words. With us, you will feel the long-awaited peace and bliss.</p>
-                    <p class="about__left_item">To do this, we are creating a project and looking for like-minded people who want to change, if not the whole world, then their own. It's time to stop being a squirrel in a wheel. It's time to stop and understand what you really want.</p>
-                    <p class="about__left_item">BLISS Coin brings together gecko lovers and crypto enthusiasts. Immerse yourself in a carefree atmosphere and become part of our family!</p>
-                </div>
-            </div>
-            <div class="about_right">
-            <img src="./img/about.png" class="about_right_img" alt="">
-                
-            </div>
+      <h2 class="about__title title">About</h2>
+      <div class="about__wrapper">
+        <div class="about_left">
+          <p class="about_left_title">
+            We love geckos. We love life. We love to give joy and love.
+          </p>
+          <div class="about__left_wrapper">
+            <p class="about__left_item">
+              Bliss is a meme token created to achieve your inner peace. Be it
+              lack of money, sadness, problems. We are the very community that
+              will support not only with words. With us, you will feel the
+              long-awaited peace and bliss.
+            </p>
+            <p class="about__left_item">
+              To do this, we are creating a project and looking for like-minded
+              people who want to change, if not the whole world, then their own.
+              It's time to stop being a squirrel in a wheel. It's time to stop
+              and understand what you really want.
+            </p>
+            <p class="about__left_item">
+              BLISS Coin brings together gecko lovers and crypto enthusiasts.
+              Immerse yourself in a carefree atmosphere and become part of our
+              family!
+            </p>
+          </div>
         </div>
+        <div class="about_right">
+          <img src="./img/about.png" class="about_right_img" alt="" />
+        </div>
+      </div>
     </div>
-
 
     <div class="tokenomics">
-        <h2 class="tokenomics__title title">
-            Tokenomics
+      <h2 class="tokenomics__title title">Tokenomics</h2>
+      <div class="tokenomics__wrapper">
+        <div class="tokenomics__item">
+          <p class="tokenomics_item_number">1,000,000,000 <span>bliss</span></p>
+          <p class="tokenomics_item_description">Total number of tokens</p>
+        </div>
+        <div class="tokenomics__item">
+          <p class="tokenomics_item_number">
+            1,000,000,000 <span> bliss</span>
+          </p>
+          <p class="tokenomics_item_description">Circulating proposal</p>
+        </div>
+        <div class="tokenomics__item">
+          <p class="tokenomics_item_number">None</p>
+          <p class="tokenomics_item_description">Access to liquidity pool</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="roadmap">
+        <h2 class="roadmap__title title">
+            Roadmap
         </h2>
-        <div class="tokenomics__wrapper">
-            <div class="tokenomics__item">
-                <p class="tokenomics_item_number">1,000,000,000 <span>bliss</span> </p>
-                <p class="tokenomics_item_description">Total number of tokens</p>
+
+        <div class="roadmap__wrapper">
+            <div class="roadmap__item">
+                <img src="./img/fro1.png" class="roadmap__item_img" alt="">
+                <div class="roadmap__item_text">
+                    <p class="roadmap__item_title">Stage 1</p>
+                    <p class="roadmap__item_description">Launch of token and website
+                        Adding a token to CoinMarketCap and CoinGecko
+                        Media development of the project
+                        Capitalization ~$50 million</p>
+                </div>
             </div>
-            <div class="tokenomics__item">
-                <p class="tokenomics_item_number">1,000,000,000 <span> bliss</span></p>
-                <p class="tokenomics_item_description">Circulating proposal</p>
+
+        
+
+            <div class="roadmap__item">
+                <img src="./img/fro2.png" class="roadmap__item_img" alt="">
+                <div class="roadmap__item_text">
+                    <p class="roadmap__item_title">Stage 2</p>
+                    <p class="roadmap__item_description">Launch of a large-scale treasure hunt for our holders (game airdrop)
+                        Competitions in our channels
+                        Attracting market makers
+                        Attracting partners to projects
+                        Listing on TOP DEX exchange</p>
+                </div>
             </div>
-            <div class="tokenomics__item">
-                <p class="tokenomics_item_number">None</p>
-                <p class="tokenomics_item_description">Access to liquidity pool</p>
+
+
+
+
+            <div class="roadmap__item">
+                <img src="./img/fro3.png" class="roadmap__item_img" alt="">
+                <div class="roadmap__item_text">
+                    <p class="roadmap__item_title">Stage 3</p>
+                    <p class="roadmap__item_description">Listing on centralized exchanges
+                        Launch of a media project
+                        Launch of an asset management project
+                        Launching an analytics project</p>
+                </div>
             </div>
+
+
+            <div class="roadmap_deco_container">
+                <div class="line"><div class="circle"></div></div>
+              </div>
+
+              <div class="roadmap_deco_container2">
+                <div class="line2"><div class="circle2"></div></div>
+              </div>
         </div>
     </div>
 
 
+
+
+
+
+
+    <script src="script.js" defer></script>
   </body>
 </html>
