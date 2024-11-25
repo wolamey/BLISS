@@ -2,16 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "manrope",sans-serif;
 
 }
 
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+
 
 @font-face {
-    font-family: "manrope";
-    src: url("./fonts/Manrope-VariableFont_wght.ttf") format("ttf"), url("./fonts/Manrope-VariableFont_wght.ttf")
-        format("ttf");
-  }
+    font-family: 'nuqun';
+    src: url('fonts/Nuqun-Regular.otf') format('truetype');
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+
+
+
+
   .button {
     text-decoration: none;
     cursor: pointer;
@@ -374,4 +393,68 @@ line-height: 120%;
 .about_deco_rotated {
     transform: rotate(90deg);
     transform-origin: 0 0;
+}
+
+
+
+
+
+
+
+.tokenomics {
+    max-width: 1200px;
+padding: 0 36px;
+margin: auto;
+display: flex;
+gap: 89px;
+
+}
+.tokenomics__title {
+
+}
+.title {
+}
+.tokenomics__wrapper {
+    margin: 101px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.tokenomics__item {
+}
+.tokenomics_item_number {
+    font-family: "nuqun",sans-serif  !important;
+font-size: 135px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+background: var(--Primari-gradient, linear-gradient(91deg, #EAEAEA 0.67%, #CECECE 15.21%, #D8CECC 47.63%, #DED4D4 66.24%, #CEBCD0 97.59%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+
+.tokenomics_item_number span{
+    background: var(--Primari-gradient, linear-gradient(91deg, #EAEAEA 0.67%, #CECECE 15.21%, #D8CECC 47.63%, #DED4D4 66.24%, #CEBCD0 97.59%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "nuqun",sans-serif !important;
+font-size: 128px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+.tokenomics_item_description {
+    color:  #373737;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; 
 }
