@@ -46,3 +46,35 @@ document.querySelectorAll(".faq__item_question").forEach((question) => {
     }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+const dollarInput = document.getElementById('dollar');
+const blsInput = document.getElementById('bls');
+const rate = 0.014; 
+
+dollarInput.addEventListener('input', () => {
+    const dollarValue = parseFloat(dollarInput.value);
+    if (!isNaN(dollarValue)) {
+        blsInput.value = (dollarValue / rate).toFixed(2);
+    } else {
+        blsInput.value = '';
+    }
+});
+
+blsInput.addEventListener('input', () => {
+    const blsValue = parseFloat(blsInput.value);
+    if (!isNaN(blsValue)) {
+        dollarInput.value = (blsValue * rate).toFixed(2);
+    } else {
+        dollarInput.value = '';
+    }
+});
