@@ -1,10 +1,13 @@
 
 function get_line_one()  {
 if(window.innerWidth<=1024 && window.innerWidth >= 768) return 200
+else if(window.innerWidth<=600) return 200
+
 else return 300
 }
 function get_line_two()  {
-  if(window.innerWidth<=1024 && window.innerWidth >= 768)return 200
+  if(window.innerWidth<=1024 && window.innerWidth >= 768 )return 200
+  else if(window.innerWidth<=600) return 200
   else return 340
   }
   

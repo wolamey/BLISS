@@ -2029,6 +2029,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  .calculator__bottom_text {
+    max-width: none;
+    width: 100%;
+  }
+  .header__button {
+    padding: 6px 36px;
+    white-space: nowrap;
+  }
   .header__nav {
     position: relative;
     right: -26px;
@@ -2208,6 +2216,9 @@ body {
     flex-direction: column;
     padding: 40px;
   }
+  .calculator {
+    margin: 0 30px;
+  }
   .calculator_right {
     order: -1;
     scale: 1;
@@ -2305,10 +2316,395 @@ body {
   .footer__left_txt {
     font-size: 16px;
   }
+  .about {
+    margin: 80px auto;
+  }
+  .roadmap {
+    margin: 80px auto auto auto;
+  }
+  .roadmap__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    max-width: 642px;
+  }
+  .roadmap__item_img {
+    width: 100%;
+  }
+  .documentation__right {
+    padding: 40px;
+  }
+  .documentation__left {
+    padding: 40px;
+  }
 }
-@media (max-width: px) {
+@media (max-width: 600px) {
+  .roadmap_deco_container,
+  .roadmap_deco_container2 {
+    left: auto;
+    align-self: center;
+  }
+  .roadmap_deco_container2 .line2,
+  .line {
+    height: 200px !important;
+  }
+  .roadmap_deco_container {
+    top: 170px;
+  }
+  .header__button {
+    display: none;
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+  }
+  .about_left {
+    width: 100%;
+  }
+  .about_right_img {
+    max-width: 335px;
+    margin: auto;
+  }
+  .tokenomics__wrapper {
+    padding: 50px 0 0 0;
+    gap: 270px;
+  }
+  .tokenomics_item_number {
+    font-size: 93px;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+  }
+  .tokenomics_item_number span {
+    font-size: 32px;
+  }
+  .roadmap {
+    margin: 120px auto auto auto;
+  }
+  .with__container {
+    padding: 20px;
+  }
+  .with__title {
+    font-size: 24px;
+  }
+  .mem_wrapper {
+    padding: 24px;
+  }
+  .mem_wrapper_title {
+    font-size: 24px;
+  }
+  .partners__top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .partners_button {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .faq {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .faq_wrapper {
+    margin: 0;
+  }
+  .documentation__center_default {
+    display: none !important;
+  }
+  .documentation__right,
+  .documentation__left {
+    overflow: hidden;
+    height: 134px;
+  }
+  .documentation__right {
+    background: url(./img/star-back.svg) no-repeat center, #fff;
+
+    background-size: cover;
+  }
+  .documentation__left {
+    background: url(./img/star2.svg) no-repeat center, #fff;
+
+    background-size: cover;
+  }
+  .documentation__paper_img,
+  .documentation__git_img {
+    display: none !important;
+  }
+  .documentation__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .documentation__paper,
+  .documentation__git {
+    font-size: 36px;
+  }
+
+  .join_top {
+    display: contents;
+  }
+  .join_prev {
+    max-width: 271px;
+  }
+  .join_top_button {
+    order: 10;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .calculator_title {
+    align-self: flex-start;
+  }
+  .join {
+    display: flex;
+    flex-direction: column;
+  }
+  .join__wrapper {
+    margin: 32px 0;
+    grid-template-columns: 1fr;
+  }
+  .join__item:nth-child(3) {
+    display: flex;
+  }
+  .join__item_prev {
+    margin: 12px 0;
+  }
+  .join__item_price {
+    font-size: 24px;
+    margin: 24px 0;
+  }
+  :root{
+    --marquee-elements-displayed: 2;
+
+  }
+  .faq__item_question{
+    text-align: start;
+  }
+  .documentation__right:hover{
+    background: url(./img/star-back.svg) no-repeat center, #fff;
+    background-size: cover;
+  }
+  .documentation__left:hover{
+    background: url(./img/star2.svg) no-repeat center, #fff;
+    background-size: cover;
+  }
+  .calculator__inputs_item_prev {
+    font-size: 20px;
+  }
+  .calculator__input {
+    font-size: 16px;
+  }
+  .calculator__input::placeholder {
+    font-size: 16px;
+  }
+  .calculator_form_price {
+    font-size: 20px;
+  }
+  .calculator__bottom_text {
+    font-size: 40px;
+  }
+  .news__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .news__top {
+    display: contents;
+  }
+  .news__button {
+    order: 10;
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+  }
+  .news__item_date {
+    font-size: 14px;
+  }
+  .news__item_title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .news__item_description {
+    font-size: 14px;
+  }
+  .news__wrapper {
+    gap: 40px;
+  }
+  .news__button {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo {
+    margin: auto;
+    order: 10;
+  }
+  .footer__right_year {
+    order: 15;
+    text-align: center;
+  }
+  .footer__wrapper {
+    display: contents;
+    flex-direction: column;
+  }
+  .footer_nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    order: -1;
+    gap: 20px;
+  }
+  .footer_nav_item {
+    gap: 16px;
+    max-height: none;
+  }
+  .footer_nav_item_link:last-child {
+    border-radius: 12px;
+    background: #ededed;
+    text-align: center;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .footer__right {
+    display: contents;
+  }
+  .footer__right_top {
+    padding: 32px 0 0 0;
+    order: -1;
+    border-top: #ededed 1px solid;
+  }
+  .footer__left {
+    max-width: none;
+    margin: 40px 0 60px 0;
+  }
+  .footer__left {
+    gap: 0;
+  }
+  .footer__left_txt {
+    font-size: 24px;
+  }
+  .calculator{
+    margin: 0 19px;
+  }
+  .footer,.news,.join,.documentation,.faq,.future__title,.partners__top,.mem,.features,.roadmap,.tokenomics,.about{
+    padding: 0 19px;
+  }
+
+  .with{
+    padding: 78px 19px;
+  }
 }
-@media (max-width: px) {
+@media (max-width: 450px) {
+  .header{
+    padding: 18px 19px;
+  }
+  .header__nav_item_two{
+    display: none;
+  }
+  .header__nav{
+    right: auto;
+  }
+  .main{
+    padding: 20px;
+  }
+  .main__title{
+    white-space: nowrap;
+  }
+  .main__text1{
+    width: 280px;
+  }
+  .main__left{
+    width: 70%;
+  }
+  .title{
+    font-size: 32px;
+
+  }
+  .roadmap__item{
+  display: flex;
+  flex-direction: column;
+  }
+  .roadmap__item_text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .roadmap__item_title{
+    font-size: 24px;
+  }
+  .roadmap__item_text{
+    padding: 0;
+  }
+  .roadmap__item{
+    gap: 7px;
+  }
+  .roadmap__item_img{
+    max-width: 214px;
+    margin: auto;
+  }
+  .roadmap_deco_container2{
+    bottom: 380px;
+  }
+  .roadmap_deco_container2 .line2{
+    transform: rotate(0deg);
+  }
+  .roadmap_deco_container{
+    top: 430px;
+  }
+  .line{
+    transform: rotate(0deg);
+
+  }
+  .roadmap__item:nth-child(2)
+  {
+    margin: 235px 0 300px 0;
+  }
+
+
+  .with__img{
+    width: 100%;
+  }
+  .features__item{
+    padding: 36px 30px;
+  }
+  .mem_img{
+    height: 306px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+
+  .calculator{
+    margin: 0;
+    
+  }
+  .calculator_container{
+    padding: 20px;
+  }
+  .testimonails_item:nth-child(2){
+    max-width: 90%;
+  }
+  .testimonails_item_bottom_left{
+    padding: 0;
+  }
+  .testimonails_item_bottom{
+    flex-direction: column;
+  }
+  .testimonails_item:nth-child(1){
+    width: 100%;
+  }
+  .testimonails__item_container{
+    width: 100%;
+  }
+  .footer_nav_item_link:last-child{
+    white-space: nowrap;
+    margin: 50px 0 20px 0;
+  }
 }
 @media (max-width: px) {
 }
