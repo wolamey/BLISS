@@ -74,10 +74,15 @@ document.querySelectorAll(".faq__item_question").forEach((question) => {
 
 const dollarInput = document.getElementById('dollar');
 const blsInput = document.getElementById('bls');
-const rate = 0.014; 
+const rateElement = document.getElementById('rate');
+
+function getRate() {
+    return parseFloat(rateElement.textContent);
+}
 
 dollarInput.addEventListener('input', () => {
     const dollarValue = parseFloat(dollarInput.value);
+    const rate = getRate();
     if (!isNaN(dollarValue)) {
         blsInput.value = (dollarValue / rate).toFixed(2);
     } else {
@@ -87,6 +92,7 @@ dollarInput.addEventListener('input', () => {
 
 blsInput.addEventListener('input', () => {
     const blsValue = parseFloat(blsInput.value);
+    const rate = getRate();
     if (!isNaN(blsValue)) {
         dollarInput.value = (blsValue * rate).toFixed(2);
     } else {
@@ -95,10 +101,20 @@ blsInput.addEventListener('input', () => {
 });
 
 
+const headerNavItemOne = document.querySelector('.header__nav_item_one');
+const modal = document.querySelector('.modal');
+const headerLogoText = document.querySelector('.header_logo_text');
+const menuIcon = document.querySelector('.menu-icon');
+const closeIcon = document.querySelector('.close-icon');
 
+headerNavItemOne.addEventListener('click', () => {
+    headerLogoText.classList.toggle('active');
+    modal.classList.toggle('active');
+    headerNavItemOne.classList.toggle('active')
 
-
-
+    menuIcon.style.display = menuIcon.style.display === 'none' ? 'block' : 'none';
+    closeIcon.style.display = closeIcon.style.display === 'none' ? 'block' : 'none';
+});
 
 
 
