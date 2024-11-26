@@ -21,6 +21,8 @@ gsap.to(".circle2", {
   duration: 15,
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
 const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
   "--marquee-elements-displayed"
@@ -77,4 +79,29 @@ blsInput.addEventListener('input', () => {
     } else {
         dollarInput.value = '';
     }
+});
+
+
+
+
+
+
+
+
+
+
+
+  const containerOuter = document.querySelector('.container_outer');
+
+  // Устанавливаем ширину контейнера равной ширине окна
+  function setContainerWidth() {
+    const screenWidth = window.innerWidth;
+    containerOuter.style.width = `${screenWidth}px`;
+  }
+
+  // Запуск функции при загрузке страницы
+  setContainerWidth();
+
+  // Обновляем ширину контейнера при изменении размеров окна
+  window.addEventListener('resize', setContainerWidth);
 });

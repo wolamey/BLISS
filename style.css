@@ -20,6 +20,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 .button {
@@ -379,7 +380,16 @@ body {
   justify-content: center;
   align-items: center;
   display: inline-flex;
+
+
+  animation: rotate 5s linear infinite;
 }
+@keyframes rotate {
+   from { transform: rotate(0deg); }
+    to { transform: rotate(360deg);
+   }
+
+  }
 
 .about_deco_position-relative {
   width: 568.09px;
@@ -689,6 +699,8 @@ body {
   justify-content: center;
   align-items: center;
   display: inline-flex;
+  animation: rotate 5s linear infinite;
+
 }
 .with_deco_relative {
   width: 568.09px;
@@ -874,6 +886,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
+  animation: rotate 5s linear infinite;
 }
 .mem_deco_inner-container {
   width: 568.09px;
@@ -1572,9 +1585,20 @@ body {
   line-height: normal;
 }
 
+.testimonails__outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container_outer {
+  
+  overflow: hidden; 
+  position: relative;
+}
+
 .testimonails {
   max-width: 1200px;
-  margin: 120px auto 0 auto;
+  margin: auto auto 0 auto;
+  padding: 120px 0 0 0;
   /* overflow: hidden; */
 }
 .testimonails__top {
@@ -1807,3 +1831,15 @@ line-height: normal;
 }
 
 
+
+
+@media (max-width:1200px){
+  .calculator_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .calculator_right{
+    width: 100%;
+    left: auto;
+  }
+}
