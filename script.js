@@ -1,23 +1,33 @@
+
+function get_line_one()  {
+if(window.innerWidth<=1024 && window.innerWidth >= 768) return 200
+else return 300
+}
+function get_line_two()  {
+  if(window.innerWidth<=1024 && window.innerWidth >= 768)return 200
+  else return 340
+  }
+  
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".circle", {
   scrollTrigger: {
     trigger: ".line",
-    start: "top center", // Начало анимации, когда верх линии будет в центре экрана
-    end: "bottom center", // Конец анимации, когда низ линии будет в центре экрана
-    scrub: true, // Анимация синхронизирована со скроллом
+    start: "top center", 
+    end: "bottom center", 
+    scrub: true, 
   },
-  y: 300, // Движение вправо на 400px
+  y: get_line_one(), 
   duration: 15,
 });
 gsap.to(".circle2", {
   scrollTrigger: {
     trigger: ".line2",
-    start: "top center", // Начало анимации, когда верх линии будет в центре экрана
-    end: "bottom center", // Конец анимации, когда низ линии будет в центре экрана
-    scrub: true, // Анимация синхронизирована со скроллом
+    start: "top center", 
+    end: "bottom center", 
+    scrub: true,
   },
-  y: 340, // Движение вправо на 400px
+  y: get_line_two(), 
   duration: 15,
 });
 
