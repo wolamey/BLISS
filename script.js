@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", () => {
 function get_line_one()  {
 if(window.innerWidth<=1024 && window.innerWidth >= 768) return 200
 else if(window.innerWidth<=600) return 200
@@ -35,7 +35,7 @@ gsap.to(".circle2", {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
+
 const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
   "--marquee-elements-displayed"
@@ -136,7 +136,7 @@ const modal2 = document.querySelector('.modal')
 
   // Обновляем ширину контейнера при изменении размеров окна
   window.addEventListener('resize', setContainerWidth);
-});
+
 
 
 
@@ -158,3 +158,63 @@ scaleContent();
 
 // Вызываем при изменении размера окна
 window.addEventListener('resize', scaleContent);
+
+
+
+
+
+
+const tokenomicsItems = document.querySelectorAll('.tokenomics_item_number');
+const tokenomics_item_description = document.querySelectorAll('.tokenomics_item_description')
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          animateNumber(entry.target, 500); // Укажите новое значение для анимации
+          observer.unobserve(entry.target); // Отменяем наблюдение после анимации
+      }
+  });
+});
+
+tokenomicsItems.forEach(item => {
+  observer.observe(item);
+});
+
+tokenomics_item_description.forEach(item => {
+  observer.observe(item);
+});
+
+
+
+
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("element-show");
+    }
+  });
+}
+
+let options = {
+  root: null, 
+  rootMargin: "0px", 
+};
+
+let observer2 = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(".element-animation");
+
+for (let elm of elements) {
+  observer2.observe(elm);
+}
+
+
+window.addEventListener("scroll", () => {
+  elements.forEach((elm) => {
+    const rect = elm.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 500) {
+     
+      elm.classList.add("element-show");
+    }
+  });
+});
+});
