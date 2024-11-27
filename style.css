@@ -86,8 +86,8 @@ body {
   flex-direction: column;
 }
 .header {
-  /* max-width: 1200px; */
-  margin: auto;
+  max-width: 1200px;
+  margin:0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,7 +222,7 @@ z-index: 18;
   display: flex;
   justify-content: space-between;
 
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 36px;
   margin: auto;
   height: 100%;
@@ -344,7 +344,7 @@ z-index: 18;
 
 .about {
   margin: 120px auto;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   position: relative;
 }
@@ -509,7 +509,7 @@ z-index: 18;
 }
 
 .tokenomics {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: auto;
   display: flex;
@@ -582,7 +582,7 @@ z-index: 18;
 }
 
 .roadmap {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: 120px auto 0 auto;
 }
@@ -697,7 +697,7 @@ z-index: 18;
 }
 
 .with {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 78px 36px;
   margin: auto;
   position: relative;
@@ -840,7 +840,7 @@ z-index: 18;
 }
 
 .features {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: 40px auto 120px auto;
 }
@@ -885,7 +885,7 @@ z-index: 18;
 
 .mem {
   position: relative;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: auto;
 }
@@ -1039,7 +1039,7 @@ z-index: 18;
   background: #b9ffb9;
 }
 .future {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: auto;
 }
 .future__title {
@@ -1051,7 +1051,7 @@ z-index: 18;
 }
 
 .partners {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: 120px auto 52px auto;
 }
 .partners__top {
@@ -1147,7 +1147,7 @@ z-index: 18;
 }
 
 .faq {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: 120px auto;
   display: flex;
@@ -1206,7 +1206,7 @@ z-index: 18;
 }
 
 .documentation {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: auto;
 }
@@ -1400,7 +1400,7 @@ z-index: 18;
 }
 
 .join {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: 120px auto;
 }
@@ -1518,7 +1518,7 @@ z-index: 18;
 .calculator {
   border-radius: 24px;
   background: #181818;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: auto;
 }
 .calculator_container {
@@ -1645,7 +1645,7 @@ z-index: 18;
 }
 
 .news {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: 120px auto;
 }
@@ -1752,16 +1752,17 @@ z-index: 18;
 .container_outer {
   overflow: hidden;
   position: relative;
+  transform-origin: top center;  
 }
 
 .testimonails {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: auto auto 0 auto;
   padding: 120px 0 0 0;
   /* overflow: hidden; */
 }
 .testimonails__top {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px;
   margin: auto auto 150px auto;
 }
@@ -1905,7 +1906,7 @@ z-index: 18;
 }
 
 .footer {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   padding: 0 36px 40px 36px;
   margin: auto;
 }
@@ -2053,7 +2054,7 @@ z-index: 18;
 
 
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) { */
   .calculator_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2064,7 +2065,7 @@ z-index: 18;
     left: auto;
     scale: 1.2;
   }
-}
+
 
 @media (max-width: 1024px) {
   .roadmap_deco_container{

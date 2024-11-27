@@ -121,11 +121,12 @@ headerNavItemOne.addEventListener('click', () => {
 
 
   const containerOuter = document.querySelector('.container_outer');
-
+const header = document.querySelector('.header')
   // Устанавливаем ширину контейнера равной ширине окна
   function setContainerWidth() {
     const screenWidth = window.innerWidth;
     containerOuter.style.width = `${screenWidth}px`;
+    // header.style.width =  `${screenWidth}px`
   }
 
   // Запуск функции при загрузке страницы
@@ -134,3 +135,24 @@ headerNavItemOne.addEventListener('click', () => {
   // Обновляем ширину контейнера при изменении размеров окна
   window.addEventListener('resize', setContainerWidth);
 });
+
+
+
+
+function scaleContent() {
+  const content = document.querySelector('.container_outer');
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth > 1200) {
+    const scale = screenWidth / 1200; // Вычисляем масштаб
+    content.style.transform = `scale(${scale})`;
+  } else {
+    content.style.transform = 'scale(1)'; // Отключаем масштабирование
+  }
+}
+
+// Вызываем при загрузке страницы
+scaleContent();
+
+// Вызываем при изменении размера окна
+window.addEventListener('resize', scaleContent);
