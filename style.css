@@ -1296,7 +1296,7 @@ top: auto;
 }
 .faq__item_answer {
   max-height: 0;
-  transition: 0.3s;
+  transition: 0.8s;
   overflow: hidden;
 }
 
@@ -1815,7 +1815,7 @@ top: auto;
   bottom: 2%;
 
   right: 0;
-
+overflow: hidden;
   width: 17.5%;
   height: 23%;
   border-radius: 100%;
