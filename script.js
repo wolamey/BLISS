@@ -122,11 +122,13 @@ headerNavItemOne.addEventListener('click', () => {
 
   const containerOuter = document.querySelector('.container_outer');
 const header = document.querySelector('.header')
+const modal2 = document.querySelector('.modal')
   // Устанавливаем ширину контейнера равной ширине окна
   function setContainerWidth() {
     const screenWidth = window.innerWidth;
     containerOuter.style.width = `${screenWidth}px`;
     // header.style.width =  `${screenWidth}px`
+    modal2.style.width = `${screenWidth}px`
   }
 
   // Запуск функции при загрузке страницы

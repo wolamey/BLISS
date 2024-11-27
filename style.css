@@ -57,11 +57,16 @@ body {
   z-index: 11;
   background: #F9F9F9;
   width: 100%;
-  
+  top: 0;
+  left: 0
+  ;
+  right: 0;
 }
 .modal.active{
-  max-height: 2000px;
+  min-height: 100vh;
+  max-height: 88000px;
   padding: 170px 36px 40px 36px !important;
+  align-self: center;
 
 }
 .container_top {
@@ -69,6 +74,8 @@ body {
   overflow: hidden;
   border-radius: 0px 0px 40px 40px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .container_top_wrapper {
   position: relative;
@@ -96,6 +103,7 @@ body {
 z-index: 18;
   gap: 30px;
   width: 100%;
+  align-self: center;
 }
 .header_logo {
   display: flex;
