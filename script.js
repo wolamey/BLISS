@@ -170,7 +170,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          animateNumber(entry.target, 500); // Укажите новое значение для анимации
           observer.unobserve(entry.target); // Отменяем наблюдение после анимации
       }
   });
