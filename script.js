@@ -11,6 +11,10 @@ function get_line_two()  {
   else return 340
   }
   
+
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".circle", {
@@ -218,7 +222,7 @@ for (let elm of elements) {
 window.addEventListener("scroll", () => {
   elements.forEach((elm) => {
     const rect = elm.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 500) {
+    if (rect.top < window.innerHeight - 300) {
      
       elm.classList.add("element-show");
     }

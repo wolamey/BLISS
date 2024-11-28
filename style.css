@@ -2157,6 +2157,8 @@ transition: 0.3s;}
 }
 
 
+
+
 @media (max-width: 1600px) {
   .roadmap_deco_container{
     top: 50px;
@@ -2877,9 +2879,15 @@ transition: 0.3s;}
   .roadmap_deco_container{
     top: 430px;
   }
+  .roadmap_deco_container.element-animation{
+    top: 300px;
+  }
   .roadmap_deco_container.element-animation.element-show{
     top: 390px;
 
+  }
+  .roadmap_deco_container2.element-animation{
+    bottom: 300px;
   }
   .roadmap_deco_container2.element-animation.element-show {
 
