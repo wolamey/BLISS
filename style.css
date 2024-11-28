@@ -78,7 +78,7 @@ body {
   flex-direction: column;
 }
 .container_top_wrapper {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   background: linear-gradient(
     216deg,
@@ -2585,7 +2585,7 @@ transition: 0.3s;}
   }
   .tokenomics__wrapper {
     padding: 50px 0 0 0;
-    gap: 270px;
+    gap: 50px;
   }
   .tokenomics_item_number {
     font-size: 93px;
