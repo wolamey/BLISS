@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", setContainerWidth);
 
   function setMarginTop() {
-    const containerTop = document.querySelector(".container_top");
+    const containerTop = document.querySelector(".container_top_wrapper");
     const about = document.querySelector(".about");
     if (containerTop && about) {
       const containerTopHeight = containerTop.getBoundingClientRect().height;
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
       header.style.transform = "scale(1)"; // Отключаем масштабирование
       main.style.transform = "scale(1)"; // Отключаем масштабирование
     }
-  setMarginTop()
+  // setMarginTop()
 
   }
 
