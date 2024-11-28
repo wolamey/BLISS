@@ -21,7 +21,7 @@ gsap.to(".circle", {
     scrub: true, 
   },
   y: get_line_one(), 
-  duration: 15,
+  duration: 1,
 });
 gsap.to(".circle2", {
   scrollTrigger: {
@@ -31,7 +31,7 @@ gsap.to(".circle2", {
     scrub: true,
   },
   y: get_line_two(), 
-  duration: 15,
+  duration: 1,
 });
 
 
@@ -116,6 +116,14 @@ headerNavItemOne.addEventListener('click', () => {
     closeIcon.style.display = closeIcon.style.display === 'none' ? 'block' : 'none';
 });
 
+const nav_link = document.querySelectorAll('.footer_nav_item_link')
+nav_link.forEach((el)=>{
+  el.addEventListener('click', ()=>{
+    modal.classList.remove("active")
+    menuIcon.style.display = menuIcon.style.display === 'none' ? 'block' : 'none';
+    closeIcon.style.display = closeIcon.style.display === 'none' ? 'block' : 'none';
+})
+})
 
 
 
