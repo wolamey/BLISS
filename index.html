@@ -170,8 +170,9 @@
       </div>
 
       <div id="home" class="container_top">
-        <video autoplay muted loop id="myVideo">
-          <source src="./img/main.mp4" type="video/mp4" />
+        <video autoplay playsinline  muted loop id="myVideo">
+          <source src="./img/main.mp4" media="(min-width: 451px)" type="video/mp4" />
+          <source src="./img/main_tel.mp4" type="video/mp4" media="(max-width: 450px)" />
         </video>
         <header class="header scale">
           <a class="header_logo">
