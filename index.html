@@ -170,9 +170,11 @@
       </div>
 
       <div id="home" class="container_top">
-        <video autoplay playsinline  muted loop id="myVideo">
-          <source src="./img/main.mp4" media="(min-width: 451px)" type="video/mp4" />
-          <source src="./img/main_tel.mp4" type="video/mp4" media="(max-width: 450px)" />
+        <video autoplay  media="(min-width: 451px)" playsinline poster="./img/main.jpg" muted loop id="myVideo">
+          <source src="./img/main.mp4" type="video/mp4" />
+        </video>
+        <video autoplay playsinline poster="./img/main_tell.jpg" muted loop id="myVideo2"  media="(max-width: 450px)">
+          <source src="./img/main_tel.mp4" type="video/mp4" />
         </video>
         <header class="header scale">
           <a class="header_logo">
